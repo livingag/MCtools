@@ -1,0 +1,36 @@
+!!name                                                                                 #!GUI1.0
+0
+!!CT
+0.7, 0.01, 0
+1, 0, 0, 
+2, 9, !!iso, !!couch, !!angle, 45, !!coll, 1, 40
+2, 0, 1, 0, 0, 0, 0, 0
+BEAM_Template,!!BEAM,521icru
+50000000, 0, 999, !!rand, 100.0, 0, 0, 1, 1, 2, 0, 0, 0, 40, 0, 0
+ #########################
+ :Start MC Transport Parameter:
+ 
+ Global ECUT= 0.7
+ Global PCUT= 0.01
+ Global SMAX= 5
+ ESTEPE= 0.25
+ XIMAX= 0.5
+ Boundary crossing algorithm= PRESTA-I
+ Skin depth for BCA= 0
+ Electron-step algorithm= PRESTA-II
+ Spin effects= On
+ Brems angular sampling= Simple
+ Brems cross sections= BH
+ Bound Compton scattering= Off
+ Compton cross sections= default
+ Pair angular sampling= Simple
+ Pair cross sections= BH
+ Photoelectron angular sampling= Off
+ Rayleigh scattering= Off
+ Atomic relaxations= Off
+ Electron impact ionization= Off
+ Photon cross sections= xcom
+ Photon cross-sections output= Off
+ 
+ :Stop MC Transport Parameter:
+ #########################
