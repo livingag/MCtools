@@ -6,7 +6,7 @@ import EDW, VMATmlc
 from glob import glob
 from numpy.random import random
 
-def inputGenerate(plandir, tempdir, EGS_HOME, beamind=[]):
+def egsinpGenerate(plandir, tempdir, EGS_HOME, beamind=[]):
 
     BEAMGenerate(plandir, tempdir, EGS_HOME, beamind)
     DOSXYZGenerate(plandir, tempdir, EGS_HOME, beamind)
